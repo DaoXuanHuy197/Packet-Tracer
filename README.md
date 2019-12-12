@@ -35,7 +35,7 @@
 
 ### 1. Đặt tên cho các Switch. ###
 
-   Switch>enable
+    Switch>enable
     Switch#configure terminal  
     Switch(config)#hostname S1  
     S1(config)# 
