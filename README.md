@@ -35,8 +35,8 @@
 
 ### 1. Đặt tên cho các Switch. ###
 
-    Switch>enable
-    Switch#configure terminal  
+    Switch>ena
+    Switch#conf t  
     Switch(config)#hostname S1  
     S1(config)# 
 
@@ -46,8 +46,8 @@ Tương tự bạn làm với bên Switch 2
 
 Ta sẽ thiết lập cho port Fa0/1 của Switch 1 (đang nối với PC0) vào VLAN có ID là 10:
 
-    S1>enable  
-    S1#configure terminal  
+    S1>ena  
+    S1#conf t  
     S1(config)#vlan 10  
     S1(config-vlan)#name VLAN10  
     S1(config-vlan)#exit  
@@ -77,8 +77,8 @@ Ta sẽ được kết quả như sau.
 
 Gán địa chỉ IP cho interface VLAN10 của Switch 1 là ``192.168.10.1``
 
-    S1>enable
-    S1#configure terminal
+    S1>ena
+    S1#conf t
     S1(config)#interface vlan 10
     S1(config-if)#ip address 192.168.10.1 255.255.255.0
     S1(config-if)#no shutdown
@@ -86,8 +86,8 @@ Gán địa chỉ IP cho interface VLAN10 của Switch 1 là ``192.168.10.1``
 
 VLAN 20 của Switch 1 là ``192.168.20.1``
 
-    S1>enable
-    S1#configure terminal
+    S1>ena
+    S1#conf t
     S1(config)#interface vlan 20
     S1(config-if)#ip address 192.168.20.1 255.255.255.0
     S1(config-if)#no shutdown
@@ -95,8 +95,8 @@ VLAN 20 của Switch 1 là ``192.168.20.1``
 
 Gán địa chỉ IP cho interface VLAN10 của Switch 2 là ``192.168.10.2``
 
-    S2>enable
-    S2#configure terminal
+    S2>ena
+    S2#conf t
     S2(config)#interface vlan 10
     S2(config-if)#ip address 192.168.10.2 255.255.255.0
     S2(config-if)#no shutdown
@@ -104,8 +104,8 @@ Gán địa chỉ IP cho interface VLAN10 của Switch 2 là ``192.168.10.2``
 
 Tương tự với VLAN 20 Switch 2 là ``192.168.20.2``
 
-    S2>enable
-    S2#configure terminal
+    S2>ena
+    S2#conf t
     S2(config)#interface vlan 20
     S2(config-if)#ip address 192.168.20.2 255.255.255.0
     S2(config-if)#no shutdown
